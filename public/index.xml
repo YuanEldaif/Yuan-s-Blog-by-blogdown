@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yuan Du&#39;s test website</title>
-    <link>/</link>
+    <link>/yuandu.netlify.com/</link>
     <description>Recent content on Yuan Du&#39;s test website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/yuandu.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to create your own logo and apply to your own website</title>
-      <link>/2019/07/07/create-your-own-logo/</link>
+      <link>/yuandu.netlify.com/2019/07/07/create-your-own-logo/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/07/07/create-your-own-logo/</guid>
+      <guid>/yuandu.netlify.com/2019/07/07/create-your-own-logo/</guid>
       <description>I have no background of editing html and css. It took me a while to figure out how to modify the Hugo Lithium theme for my own blog. so I would like to share it with you, by no means that this is the only way to do it.
 Step 1: Generate your own favicon ico by using free favicon generator. I generated it by using my inital of my first name.</description>
     </item>
     
     <item>
       <title>My Cat</title>
-      <link>/2019/07/07/my-cat/</link>
+      <link>/yuandu.netlify.com/2019/07/07/my-cat/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/07/07/my-cat/</guid>
+      <guid>/yuandu.netlify.com/2019/07/07/my-cat/</guid>
       <description>Meow there!
 My name is Sissi, female, shorthair. This is silly me:
 You may find me on my mommy&amp;rsquo;s Instagram</description>
@@ -34,19 +34,19 @@ You may find me on my mommy&amp;rsquo;s Instagram</description>
     
     <item>
       <title>R Markdown Introduction</title>
-      <link>/2019/07/07/r-markdown-introduction/</link>
+      <link>/yuandu.netlify.com/2019/07/07/r-markdown-introduction/</link>
       <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/07/07/r-markdown-introduction/</guid>
+      <guid>/yuandu.netlify.com/2019/07/07/r-markdown-introduction/</guid>
       <description>R MarkdownThe first time that I used R Markdown was back to 2014 when I was in grduate school. Unfortunately, I haven’t used this as much as I would like to due to the inconvinience with IT in the hospital. I’m slowling trying to use Rstudio more and more as SAS has limited options on some analysis. This will be great for documenting R code and math expressions.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>/yuandu.netlify.com/about/</link>
       <pubDate>Mon, 01 Jul 2019 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>/yuandu.netlify.com/about/</guid>
       <description>This is a test website for my blog by using R blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yuan Du. You may find my name as Alice, Yoanna and last name as Eldaif as I recently got married.
 I&amp;rsquo;m a Biostatistician in AdventHealth based in Orlando, FL. The more I work, the more I realized that I need to learn more statistics and data science. With a curious mind and always looking for growth, I decided to pusure my PHD in big data to refresh my knowledage and continue to learn systematically.</description>
     </item>
