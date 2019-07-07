@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Yuan Du&#39;s test website</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on Yuan Du&#39;s test website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to create your own logo and apply to your own website</title>
+      <link>/2019/07/07/create-your-own-logo/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/07/create-your-own-logo/</guid>
+      <description>I have no background of editing html and css. It took me a while to figure out how to modify the Hugo Lithium theme for my own blog. so I would like to share it with you, by no means that this is the only way to do it.
+Step 1: Generate your own favicon ico by using free favicon generator. I generated it by using my inital of my first name.</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Introduction</title>
+      <link>/2019/07/07/r-markdown-introduction/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/07/r-markdown-introduction/</guid>
+      <description>R MarkdownThe first time that I used R Markdown was back to 2014 when I was in grduate school. Unfortunately, I haven’t used this as much as I would like to due to the inconvinience with IT in the hospital. I’m slowling trying to use Rstudio more and more as SAS has limited options on some analysis. This will be great for documenting R code and math expressions.</description>
+    </item>
+    
+  </channel>
+</rss>
