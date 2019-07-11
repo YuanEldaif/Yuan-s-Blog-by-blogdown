@@ -56,11 +56,6 @@
   </url>
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2019-07-07T21:48:51-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2019/07/07/create-your-own-logo/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
   </url>
@@ -79,6 +74,10 @@
   <url>
     <loc>/2019/07/07/r-markdown-introduction/</loc>
     <lastmod>2019-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,27 @@
+---
+title: About
+author: Yuan Du
+slug: about
+categories:
+  - R
+tags:
+  - Blogdown
+---
+```{r setup, include=FALSE, echo = FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+This is a test website for my very first blog by using [**R blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and customized by [Yuan Du](https://github.com/YuanEldaif). You may find my name as Alice, Yoanna and last name as Eldaif as I recently got married.:scream_cat: I know this is very confusing...
+
+
+
+I'm a Biostatistician in AdventHealth based in Orlando, FL. The more I work, the more I realized that I need to learn more statistics and data science. With a curious mind and always looking for growth, I decided to pusure my PhD in big data. This is my test blog that contains topics in Statitics and Data Science. 
+
+Here is where I locate at -- [AdventHealth Orlando](https://www.adventhealth.com/hospital/adventhealth-orlando), formerly Florida Hospital.^[This interactive map is made by [htmlwidgets](https://www.htmlwidgets.org/).]
+
+```{r , echo = FALSE, warning=FALSE }
+library(leaflet)
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=-81.370300, lat=28.574940, popup="AdventHealth Orlando,FL")
+m
+```
