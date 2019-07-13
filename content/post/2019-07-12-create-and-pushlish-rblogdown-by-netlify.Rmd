@@ -43,4 +43,4 @@ First -> Second -> Third
         + Run `git clone <GitHub URL>` to clone new repository
 
 2. Build your blogdown. I believe this step is easy to find. 
-    + A tip to select multiple items to commit is by `git add .` and `git commit -m "your message"` and `git push origional master` in the terminal.
+    + A tip to select multiple items to commit is by `git add .` and `git commit -m "your message"` and `git push origion master` in the terminal.
