@@ -18,7 +18,7 @@ Here are the hickups that I ran into on Github, Blogdown and Netlify:
 
 - Steps of creating blogdown in Rstudio, github repo and Netlify
 
-General Order recommended:
+General Order Recommended:
 ```{r, echo=FALSE}
 DiagrammeR::grViz("digraph {
 
@@ -28,7 +28,7 @@ graph [layout = dot, rankdir = LR]
 node [shape = rectangle, style = filled, fillcolor = Linen]
 
 First [label =  'Create Github Repository']
-Second [label = 'Create R blogdown']
+Second [label = 'Create R blogdown in R Studio']
 Third [label= 'Deploy the web by Netlify']
 
 # edge definitions with the node IDs
@@ -42,5 +42,6 @@ First -> Second -> Third
         + In Rstudio terminal **Change** directory to Github repo you just created `<repo name>` by using `cd <repo name>`, 
         + Run `git clone <GitHub URL>` to clone new repository
 
-2. Build your blogdown. I believe this step is easy to find. 
+2. Build your blogdown in R Studio. I believe this step is easy to find either by watching R Studio video to get started or read the guidline book by Yihui. You can refer to my previous blog about [change to your own logo](https://yuandu.netlify.com/2019/07/07/create-your-own-logo/). You should decide if you will use R markdown or Markdown for each blog.
     + A tip to select multiple items to commit is by `git add .` and `git commit -m "your message"` and `git push origion master` in the terminal.
+    + 
