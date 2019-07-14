@@ -6,19 +6,10 @@
     <description>Recent content in Blogdown on Yuan Du&#39;s test website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Publish blogdown website and deploy by Netflify</title>
-      <link>/2019/07/09/publish-blogdown-website-and-deploy-by-netflify/</link>
-      <pubDate>Tue, 09 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/07/09/publish-blogdown-website-and-deploy-by-netflify/</guid>
-      <description>I&amp;rsquo;m a noobie on using Github and Hugo. 😊 It took me quite a while to figure out how to use version control on Github through Rstudio. In this blog, I would like to share my hickhups on publishing website to Github and deploy my website by Netflify. Some of the hickhups were caused by not understanding the structure and logic of Github and the blogdown for configuration because I took a shortcut by googling and trials &amp;amp; errors and didn&amp;rsquo;t feel like reading all the details of the Yihui&amp;rsquo;s excellent guidlines.</description>
-    </item>
     
     <item>
       <title>How to create your own logo and apply to your own website</title>
@@ -37,7 +28,7 @@ Step 1: Generate your own favicon ico by using free favicon generator. I generat
       
       <guid>/about/</guid>
       <description>This is a test website for my very first blog by using R blogdown package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and customized by Yuan Du. You may find my name as Alice, Yoanna and last name as Eldaif as I recently got married.🙀 I know this is very confusing…
-I’m a Biostatistician in AdventHealth based in Orlando, FL. The more I work, the more I realized that I need to learn more statistics and data science.</description>
+I’m a Biostatistician at AdventHealth based in Orlando, FL. The more I work, the more I realize that I need to learn more statistics and data science.</description>
     </item>
     
   </channel>
