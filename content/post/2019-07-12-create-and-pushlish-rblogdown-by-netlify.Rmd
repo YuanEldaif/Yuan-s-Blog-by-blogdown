@@ -32,23 +32,22 @@ Third [label= '3. \n Deploy the web \n by Netlify']
 First -> Second -> Third
 }", height=150)
 ```
+
 1. I highly recommend create a Github repository **before** you create blogdown as we have to use Github repo `<repo name>` to store all blogdown source files and deploy `_public_` folder by Netlify.Here is the steps that needs to pay attention when using Github:
-    
+
   + Click the _Clone or download_ green button and copy URL
   + In Rstudio terminal **Change** directory to Github repo you just created `<repo name>` by using `cd <repo name>`, 
-  + Run `git clone <GitHub URL>` to clone new repository
-
+  + Run `git clone <GitHub URL>` to clone new repository.
+  
 2. Build your blogdown in R Studio. I believe this step is easy to find either by watching R Studio video to get started or read the the part in the book by Yihui. You can refer to my previous blog about [change to your own logo](https://yuandu.netlify.com/2019/07/07/create-your-own-logo/). You should decide if you will use R markdown or Markdown for each blog.
-
   + A tip to select multiple items to commit is by `git add .`^[There is a space between "add" and "."] and `git commit -m "your message"` and `git push origion master` in the terminal.
   + Add a file for the post that contains pictures. To reference the picture from the post, a folder should be created under path `static/post`.
   + Sometimes the `Viewer` doesn't display the content. What worked for me is that I restart the R session and render my post with **`blogdown::serve_site()`** manually in the Console.
   + My post written by R markdown doesn't generate html file and then the blog coudln't be deployed. so by manually **Knit** to html to generate the file solved the problem.
   
 3. Deploy the website on netlify for free requires below steps:
-
   + Create a netlify account by Github
   + Name your website in `config.toml` file under `baseurl =`. followed by the netlify domain `netlify.com`.Remember to have **backslash "/"** at the end. 
-  + Add the build settings
+  + Add the build settings. Push the "hugo" as the Build command and "public" as the Publish directory.
   ![](/post/2019-07-12-create-and-pushlish-rblogdown-by-netlify_files/NetlifySet.png){width=800px height=600px}
   + check Hugo version `blogdown::hugo_version()`

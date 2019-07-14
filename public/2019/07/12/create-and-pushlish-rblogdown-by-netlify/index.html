@@ -84,12 +84,14 @@
 </ul>
 <p>General steps Recommended:
 <div id="htmlwidget-1" style="width:672px;height:150px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\nFirst [label =  \"1. \n Create \n Github Repository\"]\nSecond [label = \"2. \n Create R blogdown \n in R Studio\"]\nThird [label= \"3. \n Deploy the web \n by Netlify\"]\n\n# edge definitions with the node IDs\nFirst -> Second -> Third\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-1. I highly recommend create a Github repository <strong>before</strong> you create blogdown as we have to use Github repo <code>&lt;repo name&gt;</code> to store all blogdown source files and deploy <code>_public_</code> folder by Netlify.Here is the steps that needs to pay attention when using Github:</p>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\nnode [shape = rectangle, style = filled, fillcolor = Linen]\nFirst [label =  \"1. \n Create \n Github Repository\"]\nSecond [label = \"2. \n Create R blogdown \n in R Studio\"]\nThird [label= \"3. \n Deploy the web \n by Netlify\"]\n\n# edge definitions with the node IDs\nFirst -> Second -> Third\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></p>
+<ol style="list-style-type: decimal">
+<li>I highly recommend create a Github repository <strong>before</strong> you create blogdown as we have to use Github repo <code>&lt;repo name&gt;</code> to store all blogdown source files and deploy <code>_public_</code> folder by Netlify.Here is the steps that needs to pay attention when using Github:</li>
+</ol>
 <ul>
 <li>Click the <em>Clone or download</em> green button and copy URL</li>
 <li>In Rstudio terminal <strong>Change</strong> directory to Github repo you just created <code>&lt;repo name&gt;</code> by using <code>cd &lt;repo name&gt;</code>,</li>
-<li>Run <code>git clone &lt;GitHub URL&gt;</code> to clone new repository</li>
+<li>Run <code>git clone &lt;GitHub URL&gt;</code> to clone new repository.</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li>Build your blogdown in R Studio. I believe this step is easy to find either by watching R Studio video to get started or read the the part in the book by Yihui. You can refer to my previous blog about <a href="https://yuandu.netlify.com/2019/07/07/create-your-own-logo/">change to your own logo</a>. You should decide if you will use R markdown or Markdown for each blog.</li>
@@ -106,7 +108,7 @@
 <ul>
 <li>Create a netlify account by Github</li>
 <li>Name your website in <code>config.toml</code> file under <code>baseurl =</code>. followed by the netlify domain <code>netlify.com</code>.Remember to have <strong>backslash “/”</strong> at the end.</li>
-<li>Add the build settings
+<li>Add the build settings. Push the “hugo” as the Build command and “public” as the Publish directory.
 <img src="/post/2019-07-12-create-and-pushlish-rblogdown-by-netlify_files/NetlifySet.png" width="800" height="600" /></li>
 <li>check Hugo version <code>blogdown::hugo_version()</code></li>
 </ul>
