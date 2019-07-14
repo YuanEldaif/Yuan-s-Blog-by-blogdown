@@ -1,5 +1,5 @@
 ---
-title: "Pushlish R blogdown by Netlify"
+title: "Publish R blogdown by Netlify"
 author: "Yuan Du"
 date: '2019-07-12'
 slug: create-and-pushlish-rblogdown-by-netlify
@@ -50,3 +50,5 @@ First -> Second -> Third
   + Create a netlify account by Github
   + Name your website in `config.toml` file under `baseurl =`. followed by the netlify domain `netlify.com`.Remember to have **backslash "/"** at the end. 
   + Add the build settings
+  ![](/post/2019-07-12-create-and-pushlish-rblogdown-by-netlify_files/NetlifySet.png){width=800px height=600px}
+  + check Hugo version `blogdown::hugo_version()`
