@@ -14,9 +14,9 @@ This is a test website for my very first blog by using [**R blogdown**](https://
 
 
 
-I'm a Biostatistician in AdventHealth based in Orlando, FL. The more I work, the more I realized that I need to learn more statistics and data science. With a curious mind and always looking for growth, I decided to pusure my PhD in big data. This is my test blog that contains topics in Statitics and Data Science. 
+I'm a Biostatistician at AdventHealth based in Orlando, FL. The more I work, the more I realize that I need to learn more statistics and data science. With a curious mind and always looking for growth, I decided to pusure my PhD in Big Data. This is my test blog that contains topics in Statitics and Data Science. 
 
-Here is where I locate at -- [AdventHealth Orlando](https://www.adventhealth.com/hospital/adventhealth-orlando), formerly Florida Hospital.^[This interactive map is made by [htmlwidgets](https://www.htmlwidgets.org/).]
+Here is where I work -- [AdventHealth Orlando](https://www.adventhealth.com/hospital/adventhealth-orlando), formerly Florida Hospital.^[This interactive map is made by [htmlwidgets](https://www.htmlwidgets.org/).]
 
 ```{r , echo = FALSE, warning=FALSE }
 library(leaflet)
