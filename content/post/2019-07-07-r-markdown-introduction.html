@@ -9,11 +9,15 @@ tags:
   - R Markdown
 ---
 
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/viz/viz.js"></script>
+<link href="/rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/grViz-binding/grViz.js"></script>
 
 
 <div id="r-markdown" class="section level1">
 <h1>R Markdown</h1>
-<p>The first time that I used R Markdown was back to 2014 when I was in grduate school. Unfortunately, I haven’t used this as much as I would like to due to the inconvinience with IT in the hospital. I’m slowling trying to use Rstudio more and more as SAS has limited options on some analysis. This will be great for documenting R code and math expressions.</p>
+<p>The first time that I used R Markdown was back to 2014 when I was in graduate school. Unfortunately, I haven’t used this as much as I would like to due to the inconvinience with IT in the hospital. I’m slowly trying to use Rstudio more and more as SAS has limited options on some analysis. R markdown is great for documenting R code and math expressions.</p>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
 <pre class="r"><code>summary(cars)
@@ -48,6 +52,30 @@ pie(
 <img src="/post/2019-07-07-r-markdown-introduction_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption">
 Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+<div id="including-flow-chart" class="section level1">
+<h1>Including Flow Chart</h1>
+<p>You can embed a flow chart. See Figure <a href="#fig:flow">2</a> for example:</p>
+<pre class="r"><code>DiagrammeR::grViz(&quot;digraph {
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+
+node [shape = rectangle, style = filled, fillcolor = Linen]
+First [label =  &#39;1. \n Create \n Github Repository&#39;]
+Second [label = &#39;2. \n Create R blogdown \n in R Studio&#39;]
+Third [label= &#39;3. \n Deploy the web \n by Netlify&#39;]
+
+# edge definitions with the node IDs
+First -&gt; Second -&gt; Third
+}&quot;, height=150)</code></pre>
+<div class="figure"><span id="fig:flow"></span>
+<div id="htmlwidget-1" style="width:672px;height:150px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph {\ngraph [layout = dot, rankdir = LR]\n\n# define the global styles of the nodes. We can override these in box if we wish\n\nnode [shape = rectangle, style = filled, fillcolor = Linen]\nFirst [label =  \"1. \n Create \n Github Repository\"]\nSecond [label = \"2. \n Create R blogdown \n in R Studio\"]\nThird [label= \"3. \n Deploy the web \n by Netlify\"]\n\n# edge definitions with the node IDs\nFirst -> Second -> Third\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 2: A flow chart.
 </p>
 </div>
 </div>

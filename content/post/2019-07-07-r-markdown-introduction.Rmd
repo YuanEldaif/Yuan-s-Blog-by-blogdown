@@ -14,7 +14,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 # R Markdown
 
-The first time that I used R Markdown was back to 2014 when I was in grduate school. Unfortunately, I haven't used this as much as I would like to due to the inconvinience with IT in the hospital. I'm slowling trying to use Rstudio more and more as SAS has limited options on some analysis. This will be great for documenting R code and math expressions.
+The first time that I used R Markdown was back to 2014 when I was in graduate school. Unfortunately, I haven't used this as much as I would like to due to the inconvinience with IT in the hospital. I'm slowly trying to use Rstudio more and more as SAS has limited options on some analysis. R markdown is great for documenting R code and math expressions.
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -39,4 +39,24 @@ pie(
   col = c('#0292D8', '#F7EA39', '#C4B632'),
   init.angle = -50, border = NA
 )
+```
+
+# Including Flow Chart
+
+You can embed a flow chart. See Figure \@ref(fig:flow) for example:
+
+```{r flow, fig.cap='A flow chart.', tidy=FALSE}
+DiagrammeR::grViz("digraph {
+graph [layout = dot, rankdir = LR]
+
+# define the global styles of the nodes. We can override these in box if we wish
+
+node [shape = rectangle, style = filled, fillcolor = Linen]
+First [label =  '1. \n Create \n Github Repository']
+Second [label = '2. \n Create R blogdown \n in R Studio']
+Third [label= '3. \n Deploy the web \n by Netlify']
+
+# edge definitions with the node IDs
+First -> Second -> Third
+}", height=150)
 ```
