@@ -42,13 +42,14 @@ First -> Second -> Third
   + A tip to select multiple items to commit is by `git add .`^[There is a space between "add" and "."] and `git commit -m "your message"` and `git push origion master` in the terminal.
   + Add a file for the post that contains pictures. To reference the picture from the post, a folder should be created under path `static/post`.
   + Sometimes the `Viewer` doesn't display the content. What worked for me is that I restart the R session and render my post with **`blogdown::serve_site()`** manually in the Console.
-  + My post written by R markdown doesn't generate html file and then the blog coudln't be deployed. so by manually **Knit** to html to generate the file solved the problem.
+  + My post that's written by R markdown doesn't generate html file and then the blog coudln't be deployed. so by manually **Knit** to html to generate the file solved the problem.
+  + Add emojis. In `config.toml`, put `enableEmoji = true` to enable the function. You can find emoji cheatsheet [here](https://www.webfx.com/tools/emoji-cheat-sheet/).
   
 3. Deploy the website on netlify for free requires below steps:
-  + Create a netlify account by Github
-  + Name your website in `config.toml` file under `baseurl =`. followed by the netlify subdomain `.netlify.com`.Remember to have **backslash "/"** at the end. 
+  + Create a netlify account by linking with Github
+  + Name your website in `config.toml` file under `baseurl =`. followed by the netlify subdomain `.netlify.com`. Remember to have **backslash "/"** at the end. 
   + Add the build settings. Push the "hugo" as the Build command and "public" as the Publish directory.
   ![](/post/2019-07-12-create-and-pushlish-rblogdown-by-netlify_files/NetlifySet.png){width=800px height=600px}
   + check Hugo version `blogdown::hugo_version()`
 
-Hope above solutions are helpful to you. :
+Hope above solutions are helpful to you. :beers:

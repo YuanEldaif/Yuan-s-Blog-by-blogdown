@@ -99,19 +99,20 @@
 <li>A tip to select multiple items to commit is by <code>git add .</code><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and <code>git commit -m "your message"</code> and <code>git push origion master</code> in the terminal.</li>
 <li>Add a file for the post that contains pictures. To reference the picture from the post, a folder should be created under path <code>static/post</code>.</li>
 <li>Sometimes the <code>Viewer</code> doesn’t display the content. What worked for me is that I restart the R session and render my post with <strong><code>blogdown::serve_site()</code></strong> manually in the Console.</li>
-<li>My post written by R markdown doesn’t generate html file and then the blog coudln’t be deployed. so by manually <strong>Knit</strong> to html to generate the file solved the problem.</li>
+<li>My post that’s written by R markdown doesn’t generate html file and then the blog coudln’t be deployed. so by manually <strong>Knit</strong> to html to generate the file solved the problem.</li>
+<li>Add emojis. In <code>config.toml</code>, put <code>enableEmoji = true</code> to enable the function. You can find emoji cheatsheet <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">here</a>.</li>
 </ul>
 <ol start="3" style="list-style-type: decimal">
 <li>Deploy the website on netlify for free requires below steps:</li>
 </ol>
 <ul>
-<li>Create a netlify account by Github</li>
-<li>Name your website in <code>config.toml</code> file under <code>baseurl =</code>. followed by the netlify subdomain <code>.netlify.com</code>.Remember to have <strong>backslash “/”</strong> at the end.</li>
+<li>Create a netlify account by linking with Github</li>
+<li>Name your website in <code>config.toml</code> file under <code>baseurl =</code>. followed by the netlify subdomain <code>.netlify.com</code>. Remember to have <strong>backslash “/”</strong> at the end.</li>
 <li>Add the build settings. Push the “hugo” as the Build command and “public” as the Publish directory.
 <img src="/post/2019-07-12-create-and-pushlish-rblogdown-by-netlify_files/NetlifySet.png" width="800" height="600" /></li>
 <li>check Hugo version <code>blogdown::hugo_version()</code></li>
 </ul>
-<p>Hope above solutions are helpful to you. :</p>
+<p>Hope above solutions are helpful to you. 🍻</p>
 <div class="footnotes">
 <hr />
 <ol>
