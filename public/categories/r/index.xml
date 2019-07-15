@@ -46,7 +46,7 @@ Step 1: Generate your own favicon ico by using free favicon generator. I generat
       
       <guid>/about/</guid>
       <description>This is a test website for my very first blog by using R blogdown package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and customized by Yuan Du. You may find my name as Alice, Yoanna and last name as Eldaif as I recently got married.🙀 I know this is very confusing…
-I’m a Biostatistician at AdventHealth based in Orlando, FL. The more I work, the more I realize that I need to learn more statistics and data science.</description>
+I’m a Biostatistician at AdventHealth in Orlando, FL. The more I work, the more I realize that I need to learn more statistics and data science.</description>
     </item>
     
   </channel>
