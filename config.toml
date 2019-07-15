@@ -22,7 +22,7 @@ enableEmoji = true
     url = "https://twitter.com/WonderAlice13"
 [[menu.main]]
     name = "Linkedin"
-    url = "https://www.linkedin.com/in/yuanalicedu/"
+    url = "https://www.linkedin.com/in/yuaneldaif/"
 [params]
     description = "A website built through Hugo and blogdown."
 
