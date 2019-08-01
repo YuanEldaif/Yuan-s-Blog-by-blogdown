@@ -6,10 +6,20 @@
     <description>Recent content in R on Yuan Du&#39;s test website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy Text Mining</title>
+      <link>/2019/07/18/tidy-text-mining/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/18/tidy-text-mining/</guid>
+      <description>Thanks to the short course at SDSS 2019, I learned how to do tf-idf to topic modeling and sentiment analysis by using tidytext taught by Julia Silge, author of Text Mining with R and Mara Averick. They did a great job on teaching the four hour class. I didn’t expect to have so much covered in the short course.
+Here is an example that I used the method to analyze__.</description>
+    </item>
     
     <item>
       <title>Publish R blogdown by Netlify</title>

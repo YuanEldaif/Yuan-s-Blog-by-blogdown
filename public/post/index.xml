@@ -6,10 +6,30 @@
     <description>Recent content in Posts on Yuan Du&#39;s test website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My journey of being research statistician</title>
+      <link>/2019/07/30/my-journey-of-being-research-statistician/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/30/my-journey-of-being-research-statistician/</guid>
+      <description>Curiosity
+I&amp;rsquo;ve been always a person with a curious mind that constantly seaerches and looks things around. The wonder of history and the future, questionning on information on the insight drives me to the field of Statistics. I didn&amp;rsquo;t choose this field but accidentally inspired to be in the field. It was difficult for me to understand all the mathmatics and it&amp;rsquo;s still difficult till this day. But the more I know, the better I understand that how much I don&amp;rsquo;t know.</description>
+    </item>
+    
+    <item>
+      <title>Tidy Text Mining</title>
+      <link>/2019/07/18/tidy-text-mining/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/07/18/tidy-text-mining/</guid>
+      <description>Thanks to the short course at SDSS 2019, I learned how to do tf-idf to topic modeling and sentiment analysis by using tidytext taught by Julia Silge, author of Text Mining with R and Mara Averick. They did a great job on teaching the four hour class. I didn’t expect to have so much covered in the short course.
+Here is an example that I used the method to analyze__.</description>
+    </item>
     
     <item>
       <title>Publish R blogdown by Netlify</title>

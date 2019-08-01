@@ -1,0 +1,19 @@
+---
+title: Tidy Text Mining
+author: Yuan Du
+date: '2019-07-18'
+slug: tidy-text-mining
+categories:
+  - R
+tags:
+  - Tidytext
+---
+Thanks to the short course at SDSS 2019, I learned how to do tf-idf to topic modeling and sentiment analysis by using tidytext taught by Julia Silge, author of [Text Mining with R](https://www.tidytextmining.com/) and Mara Averick. They did a great job on teaching the four hour class. I didn't expect to have so much covered in the short course. 
+
+Here is an example that I used the method to analyze__.
+
+#Installation
+
+`install.packages("tidytext")`
+
+_Working on it_
