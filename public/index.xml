@@ -6,10 +6,22 @@
     <description>Recent content on Yuan Du&#39;s test website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Awesome data science presentations and hands on references</title>
+      <link>/2019/08/16/tools-reference/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/16/tools-reference/</guid>
+      <description>Recently, I searched a few pretty cool tools for R-based hands-on references.
+ R Presentation Themes
+ Why uses R presentation?
+ Take advantage of R Markdown. You can write all your slides in Markdown text Power of interchange. You can include chunks of R code and rendered output like plots, results, tables, etc. in your slides Version control and sharing. You can use git for version control and share your GitHub repository  My current favorate Xaringan nanja-theme developed by Emi Tanaka.</description>
+    </item>
     
     <item>
       <title>My journey of being research statistician</title>
