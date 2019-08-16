@@ -10,11 +10,11 @@ Thanks to the short course at SDSS 2019, I learned how to do tf-idf to topic mod
 
 Here is an example that I used the method to analyze **A Tale of Two Cities** and **Great Expectations** by Charles Dickens by using sentiment analysis.
 
-**Installation the `tidytext` package for text mining.**
+1. **Install the `tidytext` package for text mining.**
 
 `install.packages("tidytext")`
 
-**Read the book from gutenbergr package, after install gutenbergr package**
+2. **Read the book from gutenbergr package, after install gutenbergr package**
 
 We can Downloading books by ID (98 and 1400) from [Project Gutenbergr](http://www.gutenberg.org/).
 
@@ -31,7 +31,7 @@ book <-  gutenberg_download(c(98, 1400), meta_fields = "title") %>%
 book
 
 ```
-**Process books into chapters and words in tidy data form**
+3. **Process books into chapters and words in tidy data form**
 
 we need to restructure it as one-token-per-row format. As pre-processing, we divide these into chapters, use tidytext’s `unnest_tokens` to separate them into words, then remove `stop_word`s. We’re treating every chapter as a separate “document”, each with a name like *A Tale of Two cities* or *Great Expectations*.
 ```{r unnest, include=TRUE, message=FALSE}
@@ -50,7 +50,7 @@ tidy_book %>%
   count(word, sort = TRUE)
 ```
 
-**Sentiment analysis**
+4. **Sentiment analysis**
 
 Sentiment analysis can be done as an inner join. Three sentiment lexicons are available via the `get_sentiments()` function. Let's examine how sentiment changes during each novel. Let's find a sentiment score for each word using the Bing lexicon, then count the number of positive and negative words in defined sections of each novel.
 
@@ -78,7 +78,7 @@ ggplot(sentiment, aes(index, sentiment, fill = title)) +
 
 It looks like that **A Table of Two Cities** has more negative emotions and **Great Expectations** is more balanced on emotions.
 
-**Most common positive and negative words**
+5. **Most common positive and negative words**
 
 One advantage of having the data frame with both sentiment and word is that we can analyze word counts that contribute to each sentiment.
 
@@ -113,7 +113,7 @@ tidy_book2 <- tidy_book %>%
   count(word, sort = TRUE)
 
 ```
-**Wordclouds**
+6. **Wordclouds**
 
 We’ve seen that this tidy text mining approach works well with ggplot2, but having our data in a tidy format is useful for other plots as well.
 
@@ -138,4 +138,5 @@ tidy_book %>%
   comparison.cloud(colors = c("#F8766D", "#00BFC4"),
                    max.words = 100)
 ```
-For "Converting to and from Document-Term Matrix and Corpus objects", You can visit [here](https://cran.r-project.org/web/packages/tidytext/vignettes/tidying_casting.html)
+
+*For "Converting to and from Document-Term Matrix and Corpus objects", You can visit [here](https://cran.r-project.org/web/packages/tidytext/vignettes/tidying_casting.html).*
