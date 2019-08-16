@@ -1,26 +1,24 @@
 ---
-title: Tidy Text Mining
-author: Yuan Du
+title: "Tidy Text Mining"
+author: "Yuan Du"
 date: '2019-07-18'
 slug: tidy-text-mining
-categories:
-  - R
-tags:
-  - Tidytext
+tags: Tidytext
+categories: R
 ---
 Thanks to the short course at SDSS 2019, I learned how to do tf-idf to topic modeling and sentiment analysis by using tidytext taught by Julia Silge, author of [Text Mining with R](https://www.tidytextmining.com/) and Mara Averick. They did a great job on teaching the four hour class. I didn't expect to have so much covered in the short course. 
 
 Here is an example that I used the method to analyze **A Tale of Two Cities** and **Great Expectations** by Charles Dickens by using sentiment analysis.
 
-#Installation
+**Installation the `tidytext` package for text mining.**
 
 `install.packages("tidytext")`
 
-#Read the book from gutenbergr package, after install gutenbergr package
+**Read the book from gutenbergr package, after install gutenbergr package**
 
-We can Downloading books by ID (98) from [Project Gutenbergr](http://www.gutenberg.org/).
+We can Downloading books by ID (98 and 1400) from [Project Gutenbergr](http://www.gutenberg.org/).
 
-```{r read, echo=TRUE}
+```{r read, echo=TRUE, message=FALSE}
 
 library(gutenbergr)
 library(dplyr)
@@ -33,10 +31,10 @@ book <-  gutenberg_download(c(98, 1400), meta_fields = "title") %>%
 book
 
 ```
-#Process books into chapters and words in tidy data form
+**Process books into chapters and words in tidy data form**
 
 we need to restructure it as one-token-per-row format. As pre-processing, we divide these into chapters, use tidytext’s `unnest_tokens` to separate them into words, then remove `stop_word`s. We’re treating every chapter as a separate “document”, each with a name like *A Tale of Two cities* or *Great Expectations*.
-```{r unnest}
+```{r unnest, include=TRUE, message=FALSE}
 library(tidytext)
 tidy_book <- book %>%
   unnest_tokens(word, text)
@@ -52,7 +50,7 @@ tidy_book %>%
   count(word, sort = TRUE)
 ```
 
-#Sentiment analysis
+**Sentiment analysis**
 
 Sentiment analysis can be done as an inner join. Three sentiment lexicons are available via the `get_sentiments()` function. Let's examine how sentiment changes during each novel. Let's find a sentiment score for each word using the Bing lexicon, then count the number of positive and negative words in defined sections of each novel.
 
@@ -69,7 +67,7 @@ sentiment <- tidy_book %>%
 sentiment
 ```
 
-#Now we can plot these sentiment scores across the plot trajectory of each novel.
+**Now we can plot these sentiment scores across the plot trajectory of each novel.**
 ```{r, message=FALSE}
 library(ggplot2)
 
@@ -77,10 +75,11 @@ ggplot(sentiment, aes(index, sentiment, fill = title)) +
   geom_bar(stat = "identity", show.legend = FALSE) +
   facet_wrap(~title, ncol = 2, scales = "free_x")
 ```
-#Now we are ready to use the topicmodels package to create a two topic LDA model.
+
 It looks like that **A Table of Two Cities** has more negative emotions and **Great Expectations** is more balanced on emotions.
 
-#Most common positive and negative words
+**Most common positive and negative words**
+
 One advantage of having the data frame with both sentiment and word is that we can analyze word counts that contribute to each sentiment.
 
 ```{r, message=FALSE}
@@ -106,7 +105,7 @@ This lets us spot an anomaly in the sentiment analysis; the word “miss” is c
 
 ```{r, message=FALSE}
 custom_stop_words <- bind_rows(get_stopwords(),
-                               data_frame(word = "miss",
+                               tibble(word = "miss",
                                           lexicon = "custom"))
 
 tidy_book2 <- tidy_book %>%
@@ -114,20 +113,22 @@ tidy_book2 <- tidy_book %>%
   count(word, sort = TRUE)
 
 ```
-#Wordclouds
+**Wordclouds**
+
 We’ve seen that this tidy text mining approach works well with ggplot2, but having our data in a tidy format is useful for other plots as well.
 
 For example, consider the wordcloud package. Let’s look at the most common words in Charles Dickens’ two books as a whole again.
 
-```{r, message=FALSE, warning=False}
+```{r, message=FALSE，warning=FALSE}
 library(wordcloud)
 
 tidy_book %>%
   count(word) %>%
   with(wordcloud(word, n, max.words = 100))
 ```
-In other functions, such as comparison.cloud, you may need to turn it into a matrix with reshape2’s acast. Let’s do the sentiment analysis to tag positive and negative words using an inner join, then find the most common positive and negative words. Until the step where we need to send the data to comparison.cloud, this can all be done with joins, piping, and dplyr because our data is in tidy format.
-```{r, message=FALSE, warning=False}
+
+In other functions, such as comparison.cloud, you may need to turn it into a matrix with `reshape2`’s acast. Let’s do the sentiment analysis to tag positive and negative words using an inner join, then find the most common positive and negative words. Until the step where we need to send the data to comparison.cloud, this can all be done with joins, piping, and dplyr because our data is in tidy format.
+```{r, message=FALSE, warning=FALSE}
 library(reshape2)
 
 tidy_book %>%
